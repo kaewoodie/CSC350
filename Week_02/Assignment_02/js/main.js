@@ -1,7 +1,11 @@
-
-// https://getbootstrap.com/docs/5.0/getting-started/introduction/
-// https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php
-// https://getbootstrap.com/docs/5.3/content/tables/
+// Assignment: Week 2 Assignment - JSON and Boostrap
+// Author: Kae Woodie
+// Class: CSC-350
+// Sources: 
+//      https://getbootstrap.com/docs/5.0/getting-started/introduction/
+//      https://www.w3schools.com/js/js_json_arrays.asp
+//      https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php
+//      https://getbootstrap.com/docs/5.3/content/tables/
 
 // Singer JSON Objects
 const singerJSON1 = '{ "name":"Usher Raymond IV", "dob":"11/14/1978", "hometown":"Chattanooga, TN", "songs":"Yeah!, Burn, Confessions" } ';
