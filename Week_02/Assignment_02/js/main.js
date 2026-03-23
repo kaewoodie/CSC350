@@ -1,4 +1,7 @@
 
+// https://getbootstrap.com/docs/5.0/getting-started/introduction/
+// https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php
+// https://getbootstrap.com/docs/5.3/content/tables/
 
 // Singer JSON Objects
 const singerJSON1 = '{ "name":"Usher Raymond IV", "dob":"11/14/1978", "hometown":"Chattanooga, TN", "songs":"Yeah!, Burn, Confessions" } ';
@@ -18,13 +21,16 @@ let singer5 = JSON.parse(singerJSON5);
 let singersList = [singer1, singer2, singer3, singer4, singer5];
 
 // Loop through each Singer
-listSingers();
+listSingers(singersList);
 
 /** Populates Table Row Data */
-function listSingers() {
-    singersList.forEach((singer) => {
-    console.log(`Singer: ${singer.name}, DOB: ${singer.dob}`);
+function listSingers(array) {
+    // Loop through the list and append to the table body
+    array.forEach((singer) => {
     document.querySelector("#tbody").innerHTML +=
-        `<tr><td>${singer.name}</td><td>${singer.dob}</td><td>${singer.hometown}</td><td>${singer.songs}</td></tr>`;
+        `<tr><td>${singer.name}</td>
+        <td>${singer.dob}</td>
+        <td>${singer.hometown}</td>
+        <td>${singer.songs}</td></tr>`;
     })
 }
